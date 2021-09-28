@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- android:numColumns=2 is the number of columns for Grid View
+         android:horizontalSpacing is the space between horizontal
+       grid items.-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/Banner"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/design_default_color_secondary_variant"
+        android:src="@drawable/image_banner"
+        />
+    <GridView
+        android:id="@+id/idGVimages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="6dp"
+        android:numColumns="2"
+        android:verticalSpacing="6dp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
